@@ -1,6 +1,5 @@
-<!-- BY NICHOLAS(1903493) AND CASPER(1903991) -->
-<ion-header>
-  <ion-toolbar class="new-background-color">
+<ion-header [translucent]="true">
+  <ion-toolbar>
     <ion-title>
       Profile
     </ion-title>
@@ -13,8 +12,6 @@
       <ion-title size="large">Profile</ion-title>
     </ion-toolbar>
   </ion-header>
-
-<!-- This page is a profile page of the user, it has a default profile picture next to the profile name. -->
 
   <ion-grid>
     <ion-row>
@@ -31,9 +28,6 @@
     </ion-row>
   </ion-grid>
 
-  <!-- We used a ion-list feature from the ionic framework to create a list for our skills list 
-    This was nice and easy since it automatically makes the lines between the list items -->
-
   <h5>My skills</h5>
   <ion-list>
     <ion-item>
@@ -46,10 +40,6 @@
       <ion-label>Leadership skills</ion-label>
     </ion-item>
   </ion-list>
-
-<!-- We used another list for the different social media that the user uses, 
-  also after that the user can input their own CV to their profile 
-  This example only has filler text to illustrate the function of the component-->
 
   <h5>Social Media</h5>
   <ion-list>
@@ -65,14 +55,17 @@
   </ion-list>
 
   <h5>CV</h5>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-        nisi ut aliquip ex ea commodo consequat.</p>
 
-<!-- Finally we added a button, where users can contact each other by clicking it,
-we didn't manage to make it actually work but it illustrates the idea of it -->
-
-        <ion-button expand="full" color="rgb(65, 65, 65)">Contact me</ion-button>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>My CV</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+      nisi ut aliquip ex ea commodo consequat.
+    </ion-card-content>
+  </ion-card>
 
 </ion-content>
-<!-- BY NICHOLAS(1903493) AND CASPER(1903991) -->
